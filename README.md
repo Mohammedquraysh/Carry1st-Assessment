@@ -1,16 +1,16 @@
-#Project Description 
+#Project Description :
 This project is an Android application that displays a list of products fetched from an API. Users can view details of a single product, add items to a cart, remove items from the cart and manage the items within the cart. The application leverages modern Android development practices, including Jetpack Compose, Hilt for dependency injection, and Retrofit for API communication.
 
-#Features
+#Features:
  Product Listing Page Displays a list of products in the order they appear in the API response. Shows the product logo, name, and price. Product Detail Page Displays detailed information about a selected product, including its logo, name, price, and description. Includes "Add to Cart" and "Buy Now" buttons. Cart Management Items can be added to the cart from the product detail page. A badge is displayed showing the number of items in the cart. Items can be removed from the cart.
 
-#Usage
+#Usage:
  Product Listing Page: This page will be shown by default when the app is launched. Users can scroll through the list of products. Product Detail Page: When a user selects a product from the list, they will be navigated to this page where they can view more details and add the product to their cart. Cart Management: Items added to the cart will update the cart badge, and users can manage their cart by adding or removing items.
 
-#Assumptions
+#Assumptions:
  The API response provides the product details in the desired order, and no additional sorting or filtering is required on the client side. The project assumes the use of Jetpack Compose for UI development, enabling modern and declarative UI patterns. Coil are used for image loading to accommodate both traditional views and Jetpack Compose. Room is used for persisting cart items locally to handle cases where the app is used offline.
 
-#Plugin and Library Choices
+#Plugin and Library Choices:
  Jetpack Compose Dependency: androidx.compose.compiler:compiler:1.5.1, androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0 Reason: Jetpack Compose is chosen for building the UI due to its modern, declarative approach to UI development. It allows for a cleaner, more readable codebase compared to XML-based layouts.
 
 #Hilt (for Dependency Injection) Dependency: com.google.dagger:hilt-android:2.50 Reason: Hilt is selected to manage dependency injection, ensuring a scalable and testable codebase. It simplifies the setup of Dagger in Android applications.
